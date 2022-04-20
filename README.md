@@ -69,7 +69,7 @@ It's a trivial command line parser library. For any complex, production grade pr
   <details>
     <summary>See example</summary>
     
-    ```cs
+   ```cs
     //call the parser
     ArgHandler<Options> ah = new();
     //ArgHandler has two properties to show with AutoHelp
@@ -82,4 +82,4 @@ It's a trivial command line parser library. For any complex, production grade pr
         Console.WriteLine(ex.Message);
         return;
     }
-    ```
+   ```
