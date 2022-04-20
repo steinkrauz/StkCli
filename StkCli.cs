@@ -19,7 +19,7 @@
 //    Each parameter definition has four attibutes: short name, long name, 
 //    mandatory flag and description. Flag and description are optional.
 //    You may use short or long form, or both at the same time. The unused
-//    from is defined with empty string.
+//    form is defined with an empty string.
 //
 //    The following parameters are supported:
 //	   *  StrParam -- just a string parameter

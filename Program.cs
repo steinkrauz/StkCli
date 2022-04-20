@@ -9,14 +9,14 @@ namespace StkCli
 		[StrParam("-u","", Mandatory=true)]
 		public string User {get; set;}
 		private int _count;
-		[IntParam("-c","--count")]
+		[IntParam("-c","--count", Desc="Number of bottles to buy")]
 		public int Count {get => _count; 
 			set {
 				if (value<=0) throw new ArgumentException("Count cannot be negative or zero");
 				_count = value;
 			}
 		}
-		[FloatParam("-V","--volume")]
+		[FloatParam("-V","--volume", false, "Volume of one bottle")]
 		public double Volume {get; set;}
 
 		[FlagParam("-s","--sober")]
