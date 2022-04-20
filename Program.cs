@@ -6,7 +6,7 @@ namespace StkCli
 	{
 		[AutoHelp]
 		public bool Help {get; set;}
-		[StrParam("-u","", true)]
+		[StrParam("-u","", Mandatory=true)]
 		public string User {get; set;}
 		private int _count;
 		[IntParam("-c","--count")]

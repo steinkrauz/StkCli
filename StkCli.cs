@@ -87,8 +87,8 @@ namespace StkCli {
 	public class BaseParamAttribute : System.Attribute {
 		public string Name {get;}
 		public string LongName {get;}
-		public string Desc {get;}
-		public bool Mandatory {get;}
+		public string Desc {get;set;}
+		public bool Mandatory {get; set;}
 
 		public BaseParamAttribute(string n, string l, bool m = false, string d="") {
 			Name = n;
